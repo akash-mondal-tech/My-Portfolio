@@ -1301,30 +1301,23 @@ button {
 
 .projects-grid {
   display: grid;
-
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
-
   margin-top: 46px;
 }
 
 .project-card {
   overflow: hidden;
-
   border: 1px solid var(--line);
-
   border-radius: 24px;
-
   background:
-    linear-gradient(180deg,
+    linear-gradient(
+      180deg,
       rgba(255, 255, 255, 0.035),
-      rgba(255, 255, 255, 0.012));
-
+      rgba(255, 255, 255, 0.012)
+    );
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.24);
-
   transition:
     border-color 0.25s ease,
     box-shadow 0.25s ease,
@@ -1333,143 +1326,53 @@ button {
 
 .project-card:hover {
   border-color: var(--line-strong);
-
   box-shadow:
     0 34px 90px rgba(0, 0, 0, 0.36);
-
   transform: translateY(-4px);
 }
 
+/* Project Image Area */
 .project-art {
   position: relative;
-
-  min-height: 270px;
-
+  height: 270px;
   overflow: hidden;
-
   border-bottom: 1px solid var(--line);
-
-  background:
-    radial-gradient(circle at 60% 45%,
-      rgba(255, 255, 255, 0.09),
-      transparent 22%),
-    #0a0a0b;
+  background: #0a0a0b;
 }
 
-.art-grid {
-  position: absolute;
-
-  inset: 0;
-
-  opacity: 0.35;
-
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.055) 1px,
-      transparent 1px),
-    linear-gradient(90deg,
-      rgba(255, 255, 255, 0.055) 1px,
-      transparent 1px);
-
-  background-size: 34px 34px;
-
-  transform:
-    perspective(600px) rotateX(58deg) scale(1.8) translateY(15%);
-
-  transform-origin: center bottom;
+/* Project Screenshot */
+.project-art img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
 }
 
-.art-orb {
-  position: absolute;
-
-  width: 170px;
-  height: 170px;
-
-  border-radius: 48px;
-
-  left: 50%;
-  top: 50%;
-
-  transform:
-    translate(-50%, -50%) rotate(18deg);
-
-  border: 1px solid rgba(255, 255, 255, 0.18);
-
-  background:
-    linear-gradient(145deg,
-      rgba(255, 255, 255, 0.55),
-      rgba(84, 86, 92, 0.08));
-
-  box-shadow:
-    inset 0 0 30px rgba(255, 255, 255, 0.1),
-    0 28px 60px rgba(0, 0, 0, 0.55);
-
-  animation:
-    cardFloat 6s ease-in-out infinite;
+/* Image Hover Effect */
+.project-card:hover .project-art img {
+  transform: scale(1.04);
+  filter: brightness(1.05);
 }
 
-.art-orb::before {
-  content: '';
-
-  position: absolute;
-
-  inset: 19px;
-
-  border-radius: 36px;
-
-  border: 1px solid rgba(0, 0, 0, 0.32);
-
-  background:
-    radial-gradient(circle at 32% 25%,
-      rgba(255, 255, 255, 0.16),
-      transparent 32%),
-    #111214;
-}
-
-.orb-2 {
-  border-radius: 50%;
-
-  transform:
-    translate(-50%, -50%) rotate(-8deg);
-}
-
-.orb-3 {
-  border-radius: 24px;
-
-  transform:
-    translate(-50%, -50%) rotate(34deg);
-}
-
-.orb-4 {
-  border-radius:
-    34% 66% 45% 55% / 58% 42% 58% 42%;
-
-  transform:
-    translate(-50%, -50%) rotate(-24deg);
-}
-
+/* Project Number & Type */
 .project-index,
 .project-type {
   position: absolute;
-
   top: 17px;
-
+  z-index: 3;
   padding: 8px 10px;
-
   border: 1px solid var(--line);
-
   border-radius: 999px;
-
   background: rgba(5, 5, 5, 0.66);
-
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
   font-size: 9px;
-
   letter-spacing: 0.16em;
-
   text-transform: uppercase;
-
   color: #8d9097;
 }
 
@@ -1487,48 +1390,33 @@ button {
 
 .project-heading {
   display: flex;
-
   align-items: flex-start;
-
   gap: 12px;
-
   justify-content: space-between;
 }
 
 .project-heading h2 {
   max-width: 520px;
-
   font-family: 'Space Grotesk', sans-serif;
-
   font-size: 26px;
-
   line-height: 1.05;
-
   letter-spacing: -0.04em;
 }
 
 .project-arrow {
   width: 38px;
   height: 38px;
-
   display: grid;
-
   place-items: center;
-
   flex: 0 0 auto;
-
   border: 1px solid var(--line);
-
   border-radius: 12px;
 }
 
-.project-body>p {
+.project-body > p {
   margin-top: 12px;
-
   color: #777a80;
-
   font-size: 13px;
-
   line-height: 1.7;
 }
 
@@ -1538,54 +1426,27 @@ button {
 
 .project-links {
   display: flex;
-
   justify-content: space-between;
-
   gap: 12px;
-
   margin-top: 24px;
-
   padding-top: 15px;
-
   border-top: 1px solid var(--line);
 }
 
 .project-links a {
   display: inline-flex;
-
   align-items: center;
-
   gap: 8px;
-
   color: #c0c2c7;
-
   font-size: 11px;
-
   text-transform: uppercase;
-
   letter-spacing: 0.1em;
-
   transition: color 0.2s ease;
 }
 
 .project-links a:hover {
   color: #fff;
 }
-
-@keyframes cardFloat {
-
-  0%,
-  100% {
-    transform:
-      translate(-50%, -50%) rotate(18deg) translateY(0);
-  }
-
-  50% {
-    transform:
-      translate(-50%, -50%) rotate(18deg) translateY(-12px);
-  }
-}
-
 
 /* =========================================================
    TIMELINE

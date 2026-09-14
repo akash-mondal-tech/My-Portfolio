@@ -12,17 +12,17 @@ const cards = [
 export default function About() {
   return (
     <section className="section-view">
-      <PageHeader eyebrow="01 · ABOUT" title="A curious builder with a long-term AI vision." intro="I’m currently pursuing BCA (Honours & Research) and building a foundation across software, web, AI and cybersecurity." />
+      <PageHeader eyebrow="01 · ABOUT" title="A curious builder with a long-term AI vision." intro="BCA (Honours & Research) student focused on AI and Machine Learning.Exploring Generative AI, Prompt Engineering, and AI technologies." />
       <div className="about-grid">
         <motion.div className="profile-panel glass-panel" initial={{ opacity: 0, x: -22 }} animate={{ opacity: 1, x: 0 }}>
           <div className="profile-orb">AM</div>
           <div>
             <span className="muted-label">CURRENTLY</span>
             <h2>BCA · Narula Institute of Technology</h2>
-            <p>My goal is to grow from a strong programming and web foundation into an AI/ML-focused engineering career.</p>
+            <p>My goal is to grow in AI and Machine Learning and build practical solutions as an aspiring AI Engineer.</p>
           </div>
           <div className="profile-lines">
-            <div><span>Focus</span><strong>AI / ML · Full Stack</strong></div>
+            <div><span>Focus</span><strong>AI / ML · GEN AI</strong></div>
             <div><span>Based</span><strong>Kolkata, India</strong></div>
             <div><span>Style</span><strong>Minimal · Technical · Modern</strong></div>
           </div>

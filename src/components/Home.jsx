@@ -39,7 +39,7 @@ export default function Home({ onNavigate }) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.1 }}
         >
-          AI / ML ENTHUSIAST · WEB DEVELOPER
+          AI / ML • FRONTEND DEVELOPER • PROMPT ENGINEERING LEARNER
         </motion.p>
 
         <motion.h1
@@ -66,9 +66,9 @@ export default function Home({ onNavigate }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          A BCA student focused on AI, machine learning, modern web
-          experiences, cybersecurity and generative technology. I like
-          turning ideas into clean, useful interfaces.
+          A BCA student focused on AI, Machine Learning, and Generative AI.
+          Exploring Prompt Engineering and building practical AI-driven projects.
+          Aspiring to grow as an AI Engineer and create impactful solutions.
         </motion.p>
 
         {/* ================= BUTTONS ================= */}
@@ -104,7 +104,7 @@ export default function Home({ onNavigate }) {
           transition={{ delay: 0.48 }}
         >
           <a
-            href="https://github.com/"
+            href="https://github.com/akash-mondal-tech"
             target="_blank"
             rel="noreferrer"
           >
@@ -112,8 +112,9 @@ export default function Home({ onNavigate }) {
             GitHub
           </a>
 
+
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/akashmondaltech"
             target="_blank"
             rel="noreferrer"
           >
@@ -171,7 +172,7 @@ export default function Home({ onNavigate }) {
             </div>
           )}
 
-          
+
         </div>
 
         {/* ================= FLOATING CHIPS ================= */}
@@ -191,7 +192,7 @@ export default function Home({ onNavigate }) {
           SEC
         </div>
 
-      
+
 
       </div>
     </section>

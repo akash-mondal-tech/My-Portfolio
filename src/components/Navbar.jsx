@@ -18,7 +18,7 @@ export default function Navbar({ active, onNavigate }) {
           <span className="brand-mark">AM</span>
           <span className="brand-copy">
             <strong>Akash Mondal</strong>
-            <small>AI / ML · Web</small>
+            <small>AI / ML · GEN AI</small>
           </span>
         </button>
 

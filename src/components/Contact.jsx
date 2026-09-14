@@ -172,9 +172,9 @@ export default function Contact() {
 
           <div className="contact-lines">
 
-            <a href={`mailto:${YOUR_EMAIL}`}>
+            <a href={`mailto:${"akmon5071@gmail.com"}`}>
               <FiMail />
-              {YOUR_EMAIL}
+              {"akmon5071@gmail.com"}
             </a>
 
             <span>
@@ -189,7 +189,7 @@ export default function Contact() {
           <div className="hero-socials contact-socials">
 
             <a
-              href="https://github.com/"
+              href="https://github.com/akash-mondal-tech"
               target="_blank"
               rel="noreferrer"
             >
@@ -198,7 +198,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/akashmondaltech"
               target="_blank"
               rel="noreferrer"
             >
@@ -355,7 +355,7 @@ export default function Contact() {
           </strong>
 
           <span>
-            AI / ML Enthusiast & Web Developer
+            AI / ML Enthusiast & Genarative Ai
           </span>
         </div>
 
@@ -364,7 +364,7 @@ export default function Contact() {
         <div className="footer-links">
 
           <a
-            href="https://github.com/"
+            href="https://github.com/akash-mondal-tech"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
@@ -373,7 +373,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/akashmondaltech"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
@@ -382,7 +382,7 @@ export default function Contact() {
           </a>
 
           <a
-            href={`mailto:${YOUR_EMAIL}`}
+            href={`mailto:${"akmon5071@gmail.com"}`}
             aria-label="Email"
           >
             <FiMail />

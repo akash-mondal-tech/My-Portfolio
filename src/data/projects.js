@@ -3,36 +3,26 @@ export const projects = [
     number: '01',
     title: 'MovieVerse Landing Page',
     type: 'Frontend Experience',
-    description: 'A cinematic movie discovery landing page with a focused hero section, visual hierarchy and responsive layout.',
+    description:
+      'A cinematic movie discovery landing page with a focused hero section, visual hierarchy and responsive layout.',
     stack: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/',
+    image: '/projects/feature3.jpg',
+    github: 'https://github.com/akash-mondal-tech/movieverse-landing-page',
     live: '#',
   },
+
   {
     number: '02',
-    title: 'Zomato Clone',
-    type: 'UI / Frontend Build',
-    description: 'A food-platform inspired frontend flow featuring login, signup and polished interface components.',
-    stack: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/',
-    live: '#',
-  },
-  {
-    number: '03',
     title: 'Weather Intelligence Dashboard',
     type: 'Data-driven UI',
-    description: 'A weather dashboard concept focused on useful information hierarchy, responsive cards and a modern control surface.',
+    description:
+      'A weather dashboard concept focused on useful information hierarchy, responsive cards and a modern control surface.',
     stack: ['JavaScript', 'API', 'CSS'],
-    github: 'https://github.com/',
-    live: '#',
+    image: '/projects/weather.jpg',
+    github:
+      'https://github.com/akash-mondal-tech/Weather-intelligence-dashboard',
+    live: 'https://weather-intelligence-dashboard-black.vercel.app',
   },
-  {
-    number: '04',
-    title: 'AI / ML Project — Coming Soon',
-    type: 'Future Build',
-    description: 'A future machine-learning project will live here as the AI roadmap moves from fundamentals to production-minded experiments.',
-    stack: ['Python', 'ML', 'AI'],
-    github: '#',
-    live: '#',
-  },
+
+  
 ];
