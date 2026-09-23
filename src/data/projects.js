@@ -8,7 +8,7 @@ export const projects = [
     stack: ['HTML', 'CSS', 'JavaScript'],
     image: '/projects/feature3.jpg',
     github: 'https://github.com/akash-mondal-tech/movieverse-landing-page',
-    live: '#',
+    live: 'https://movieverse-landing-page.vercel.app',
   },
 
   {
@@ -17,8 +17,8 @@ export const projects = [
     type: 'Data-driven UI',
     description:
       'A weather dashboard concept focused on useful information hierarchy, responsive cards and a modern control surface.',
-    stack: ['JavaScript', 'API', 'CSS'],
-    image: '/projects/weather.jpg',
+    stack: ['HTML', 'CSS', 'JavaScript','API'],
+    image: '/projects/weather.png',
     github:
       'https://github.com/akash-mondal-tech/Weather-intelligence-dashboard',
     live: 'https://weather-intelligence-dashboard-black.vercel.app',
